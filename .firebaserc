@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "jjdap-pokemon-auth": {
+      "hosting": {
+        "jjdap-prueba-tecnica-pokemon": [
+          "jjdap-pokemon-auth"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "jjdap-pokemon-auth"
+  }
+}

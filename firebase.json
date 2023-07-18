@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "jjdap-prueba-tecnica-pokemon",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

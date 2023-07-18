@@ -6,9 +6,10 @@ import { PokemonListComponent } from './components/pokemon/pokemon-list/pokemon-
 import { PokemonDetailComponent } from './components/pokemon/pokemon-detail/pokemon-detail.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { canActivate, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
 
 const routes: Routes = [
-  {path:'home', component: HomeComponent},
+  {path:'home', component: HomeComponent, ...canActivate(() => redirectUnauthorizedTo(['/login']))},
   {path:'about', component: AboutComponent},
   {path:'pokemon-list', component: PokemonListComponent},
   {path:'pokemon-detail/:id', component: PokemonDetailComponent},
