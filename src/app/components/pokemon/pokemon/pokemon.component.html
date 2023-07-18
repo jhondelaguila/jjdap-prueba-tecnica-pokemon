@@ -1,1 +1,22 @@
-<p>pokemon works!</p>
+<div class="row">
+    <div class="col center-elem" *ngFor="let pokemon of pokemonList">
+      <div
+        class="card card-settings"
+        style="width: 18rem"
+        *ngIf="pokemon !== undefined"
+      >
+        <img src="{{ pokemon.sprites.other['official-artwork'].front_default }}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ pokemon.name }}</h5>
+        </div>
+        <div class="card-body center-elem">
+          <a
+            type="button"
+            class="btn btn-warning btn-2"
+            routerLink="details/{{ pokemon.id }}"
+            >See more</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>  

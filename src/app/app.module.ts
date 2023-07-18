@@ -11,6 +11,10 @@ import { PokemonComponent } from './components/pokemon/pokemon/pokemon.component
 import { PokemonListComponent } from './components/pokemon/pokemon-list/pokemon-list.component';
 import { PokemonDetailComponent } from './components/pokemon/pokemon-detail/pokemon-detail.component';
 import { NavbarComponent } from './utils/navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +30,10 @@ import { NavbarComponent } from './utils/navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
